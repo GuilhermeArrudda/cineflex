@@ -5,8 +5,8 @@ export default function Header() {
     return (
         <header>
             <Link to="/">
-            CINEFLEX
+                <p>CINEFLEX</p>
             </Link>
         </header>
     )
-} 
+}

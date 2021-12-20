@@ -1,0 +1,30 @@
+footer{
+    background-color: #DFE6ED;
+    width: 100vw;
+    height: 117px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9EADBA;
+    display: flex;
+    font-size: 26px;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer .poster{
+    background-color: #fff;
+    width: 64px;
+    height: 89px;
+    margin: 14px 10px;
+}
+footer .poster img{
+    width: 48px;
+    height: 72px;
+}
+footer .rodape-text{
+    width: calc(100vw - 90px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

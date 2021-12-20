@@ -1,0 +1,7 @@
+import "./styles.css";
+
+export default function Loading() {
+    return (
+        <p>Carregando...</p>
+    )
+} 

@@ -1,0 +1,17 @@
+button.seat{
+    width: 26px;
+    height: 26px;
+    color: #000;
+    background: #C3CFD9;
+    border: 1px solid #808F9D;
+    border-radius: 12px;
+    margin: 0 7px 18px 0;
+}
+button.seat.unavalable{
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+button.seat.selected{
+    background: #8DD7CF;
+    border: 1px solid #45BDB0;
+}

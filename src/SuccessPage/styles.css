@@ -1,0 +1,13 @@
+.success-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-page .title{
+    text-align: center;
+    color: #247A6B;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #293845;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+} 

@@ -1,25 +1,33 @@
 import "./css/reset.css";
-import "./css/style.css";
+import "./css/styles.css";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header/Header.js";
-import PaginaInicial from "./PaginaInicial";
-import Movie from "./Movie";
-import Sessao from "./Sessao";
-import PedidoFeito from "./PedidoFeito";
-
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import Sessoes from "./Sessoes/Sessoes";
+import Lugares from "./Lugares/Lugares";
+import SuccessPage from "./SuccessPage/SuccessPage";
 
 export default function App() {
+    const [reservationData, setReservationData] = useState({
+        ids: [],
+	    name: "",
+	    cpf: "",
+        movie: "",
+        date: "",
+        showtime: ""
+    })
     return (
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path="/" element={<PaginaInicial />}>
+                <Route path="/" element={<Home />}>
                 </Route>
-                <Route path="/sessoes/:idFilme" element={<Movie />}>
+                <Route path="/filme/:filmId" element={<Sessoes />}>
                 </Route>
-                <Route path="/assentos/:idSessao" element={<Sessao />}>
+                <Route path="/assentos/:assentosId" element={<Lugares setReservationData={setReservationData} />}>     
                 </Route>
-                <Route path="/sucesso" element={<PedidoFeito />}>
+                <Route path="/sucesso" element={<SuccessPage reservationData={reservationData} />}>
                 </Route>
             </Routes>
         </BrowserRouter>

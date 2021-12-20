@@ -1,0 +1,9 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie-box{
+    display: flex;
+    flex-wrap: wrap;
+}

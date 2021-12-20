@@ -1,0 +1,19 @@
+.text{
+    margin: 50px auto;
+    width: 330px;
+}
+.text h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text p {
+    margin-bottom: 4px;
+    font-size: 22px
+}
+
+@media (max-width: 330px) {
+    .text{
+        width: 90vw;
+    }
+}

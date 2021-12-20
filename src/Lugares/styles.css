@@ -1,0 +1,16 @@
+.lugares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seats-box{
+    margin-top: -20px;
+    width: 330px;
+    margin: -20px 0 40px 0;
+}
+
+@media (max-width: 330px) {
+    .seats-box{
+        width: 90vw;
+    }
+}
