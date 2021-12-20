@@ -42,7 +42,7 @@ export default function Lugares({ setReservationData }) {
                 date: lugaresDATA.day.date,
                 showtime: lugaresDATA.name
             });
-            navigate.push("/sucesso");
+            navigate("/sucesso");
         }
     }
     function verifyInfo() {
